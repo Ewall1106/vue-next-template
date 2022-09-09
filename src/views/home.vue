@@ -1,12 +1,13 @@
 <template>
   <div class="home">
-    <Info />
+    <Info :name="info.name" />
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent, onMounted } from 'vue'
 import Info from '@/components/Info.vue'
+import HomeObserver from './store'
 
 export default defineComponent({
   name: 'Home',
@@ -14,7 +15,15 @@ export default defineComponent({
     Info
   },
   setup() {
-    return {}
+    const info = HomeObserver.getInfo()
+
+    onMounted(() => {
+      HomeObserver.requestInfo()
+    })
+
+    return {
+      info
+    }
   }
 })
 </script>

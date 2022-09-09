@@ -1,5 +1,6 @@
 import axios, { AxiosInstance } from 'axios'
 
+// eslint-disable-next-line
 const config = require('../../config')
 const { baseURL } = config[process.env.NODE_ENV]
 

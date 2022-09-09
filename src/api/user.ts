@@ -1,14 +1,10 @@
 import request from '@/utils/request'
 
 export type GetInfoResponse = {
-  uid?: string
-  username?: string
-  password?: string
-  nickname?: string
-  avatar?: string
+  name?: string
 }
 
-export function getInfo() {
+export function getUserInfo() {
   return request<GetInfoResponse>({
     url: '/user/info',
     method: 'get'
