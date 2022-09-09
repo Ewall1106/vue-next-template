@@ -1,0 +1,20 @@
+$theme: #1c99e2c0;
+$green: #38ca73;
+
+$large: 38px;
+$normal: 32px;
+$small: 28px;
+$mini: 20px;
+
+@mixin text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// the :export directive is the magic sauce for webpack
+// https://www.bluematador.com/blog/how-to-share-variables-between-js-and-sass
+:export {
+  theme: $theme;
+  green: $green;
+}
