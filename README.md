@@ -10,7 +10,7 @@
   </a>
 </p>
 
-[English](https://github.com/Ewall1106/vue-next-template/blob/main/README.md) | [简体中文](hhttps://github.com/Ewall1106/vue-next-template/blob/main/README.zh.md)
+[English](https://github.com/Ewall1106/vue-next-template/blob/main/README.md) | [简体中文](https://github.com/Ewall1106/vue-next-template/blob/main/README.zh.md)
 
 `Vue-Next-Template` provides the basic template required for h5 page development, and including some common solutions and extended functions on the basis of the official templates.
 
