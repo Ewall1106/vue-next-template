@@ -1,11 +1,27 @@
 import { reactive } from 'vue'
+import { getUserInfo } from '@/api'
 
-class HomeInfo {
-  info: any = reactive({
-    name: '....'
-  })
+interface Info {
+  name: string
 }
 
-const FormObserver = new HomeInfo()
+class HomeInfo {
+  info: Info = reactive({
+    name: 'loading...'
+  })
 
-export default FormObserver
+  requestInfo = () => {
+    getUserInfo().then(res => {
+      const name = res.data.name
+      Object.assign(this.info, { name })
+    })
+  }
+
+  getInfo = () => {
+    return this.info
+  }
+}
+
+const HomeObserver = new HomeInfo()
+
+export default HomeObserver
