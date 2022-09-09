@@ -10,7 +10,7 @@
   </a>
 </p>
 
-[English](https://github.com/Ewall1106/vue-next-template/blob/main/README.md) | [简体中文](hhttps://github.com/Ewall1106/vue-next-template/blob/main/README.zh.md)
+[English](https://github.com/Ewall1106/vue-next-template/blob/main/README.md) | [简体中文](https://github.com/Ewall1106/vue-next-template/blob/main/README.zh.md)
 
 `Vue-H5-Template` 项目使用提供开发所需的基础模板，并在官方模板的基础上包含一些通用型的解决方案及扩展功能。
 
