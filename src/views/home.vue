@@ -4,7 +4,7 @@
   </div>
 </template>
 
-<script lang="ts">
+<script>
 import { defineComponent, onMounted } from 'vue'
 import Info from '@/components/Info.vue'
 import HomeObserver from './store'
